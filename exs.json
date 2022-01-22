@@ -2,7 +2,7 @@
   "eventTrigger" : "ON_DOWNLOAD_CONTROLLER_STOPPED",
   "enabled" : false,
   "name" : "uploadtorclone",
-  "script" : "//Trigger: \"A Download Stopped\"\n\nvar notArchive = link.getArchive() == null;\nvar packageFinished = link.getPackage().isFinished();\n\nvar folder = link.getPackage().getDownloadFolder();\nvar name = link.getPackage().getName();\n\ncallSync(\"/path/to/my/script.sh\");",
+  "script":"//Trigger: \"A Download Stopped\"\n\nvar notArchive = link.getArchive() == null;\nvar packageFinished = link.getPackage().isFinished();\n\nvar folder = link.getPackage().getDownloadFolder();\nvar name = link.getPackage().getName();\n\ncallSync(\"/usr/bin/rclone\" , \"copy\" , \"/jdx/\" , name , \"1su-mov-a:jd1\" , name , \"--config=/rclone.conf\");"
   "eventTriggerSettings" : {
     "isSynchronous" : true
   },
