@@ -1,5 +1,6 @@
 #!/bin/bash
 chmod +x /Jdownloader-2-Rclone-Heroku/up.sh
+mkdir /jdx/jdownload
 cp /jdx/cfg/org.jdownloader.settings.GeneralSettings.json /jdx
 cat /jdx/org.jdownloader.settings.GeneralSettings.json |sed 's/"defaultdownloadfolder" : "\/jdx/"defaultdownloadfolder" : "\/jdx\/jdownload/g' >/jdx/cfg/org.jdownloader.settings.GeneralSettings.json
 while :
