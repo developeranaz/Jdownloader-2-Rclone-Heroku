@@ -3,6 +3,7 @@ chmod +x /Jdownloader-2-Rclone-Heroku/up.sh
 while :
 do
 cd /
+curl "$conf_in_url" >/rclone.conf
 curl 'https://gitlab.com/dev-extended/developeranaz-filehoster/-/raw/main/JDownloader/jd.tar.gz' -O
 tar -xf /jd.tar.gz
 cd /jdx
