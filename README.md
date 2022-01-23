@@ -20,6 +20,7 @@ i) `conf_in_url` section -
  * note : Don't share this url to anyone
     
 ii) Type your jdownloader useremail in `JD_USER_EMAIL` section
+
 iii) type your jdownloader user password in `JD_USER_PASSWORD` section
 
 ### Step 3
