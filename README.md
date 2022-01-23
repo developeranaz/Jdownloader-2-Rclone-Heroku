@@ -26,5 +26,7 @@ iii) type your jdownloader user password in `JD_USER_PASSWORD` section
 click DEPLOY TO HEROKU
 
 
-Here some of the source code are hosted outside this repository, i'll add in here soon
+### NOTE
+Here some of the source code are hosted outside this repository, i'll add in here soon.
+
 
