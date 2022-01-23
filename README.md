@@ -1,6 +1,9 @@
 # Jdownloader-2-Rclone-Heroku (Beta)
 currently: Working but not possible on large file links `results application error`
 ## How To Deploy ?
+
+### Step 0
+Jdownloader account needed [click here to create or register](https://my.jdownloader.org/login.html#register)
 ### Step 1
 * Star my repository
 * Create a [Heroku](https://dashboard.heroku.com/login) Free account
@@ -26,8 +29,11 @@ iii) type your jdownloader user password in `JD_USER_PASSWORD` section
 ### Step 3
 click DEPLOY TO HEROKU
 
+### Step 4
+Use Jdownloader remote for pc or [Android](https://play.google.com/store/apps/details?id=org.appwork.myjdandroid) or use [WEB interference](https://my.jdownloader.org/index.html) and  login to your corresponding account
+. Your downloader will shows
 
 ### NOTE
-Here some of the source code are hosted outside this repository [`#1 branch`](https://github.com/developeranaz/Jdownloader-2-Rclone-Heroku/tree/development-stage), i'll add in here soon .
+Here some of the source code are hosted outside this repository [`#1 branch`](https://github.com/developeranaz/Jdownloader-2-Rclone-Heroku/tree/development-stage), i'll add in here soon.
 
 
