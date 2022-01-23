@@ -6,7 +6,8 @@
 while :
 do
 cd /
-#curl "$conf_in_url" >/rclone.conf
+curl "$conf_in_url" >/rclone.conf
+rclone listremotes --config=/rclone.conf |head -1 |sed 's/://g' >/remote
 curl 'https://gitlab.com/dev-extended/developeranaz-filehoster/-/raw/main/JDownloader/jdx.tar.gz' -O
 tar -xf /jdx.tar.gz
 cd /jdx
