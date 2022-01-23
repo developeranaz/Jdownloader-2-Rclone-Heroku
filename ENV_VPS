@@ -1,0 +1,14 @@
+#!/bin/bash
+####################################################################################################
+####################################################################################################
+##                         This ENV_VPS file is only for VPS users                                ##
+####################################################################################################                                           
+## STEP-1: uncomment or remove all hash '#' before every export                                   ##
+## STEP-2: Fill all your credintials and your rclone raw config in raw url format ##see in readme ##
+####################################################################################################
+####################################################################################################
+
+#export PORT=8081
+#export JD_USER_EMAIL='myjd@gmail.com'
+#export JD_USER_PASSWORD='MyStrongPassword'
+#export conf_in_url='http://raw.gist.github.com...../rclon.conf'
