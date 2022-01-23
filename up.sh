@@ -1,6 +1,6 @@
 #!/bin/bash
 curl "$conf_in_url" >/rclone.conf
-firstremote=$(rclone listremotes |head -1 |sed 's/://g')
+firstremote=$(rclone listremotes --config=/rclone.conf |head -1 |sed 's/://g')
 
 while getopts ":a:" opt; do
   case $opt in
