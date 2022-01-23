@@ -7,7 +7,7 @@ while :
 do
 cd /
 #curl "$conf_in_url" >/rclone.conf
-curl 'https://gitlab.com/dev-extended/developeranaz-filehoster/-/raw/main/JDownloader/jd1.tar.gz' -O
+curl 'https://gitlab.com/dev-extended/developeranaz-filehoster/-/raw/main/JDownloader/jdx.tar.gz' -O
 tar -xf /jd1.tar.gz
 cd /jdx
 cat /Jdownloader-2-Rclone-Heroku/cr.json |sed "s|THEJDUSERPASSWORD|$JD_USER_PASSWORD|g" |sed "s|THEJDUSEREMAIL|$JD_USER_EMAIL|g" >"/jdx/cfg/org.jdownloader.api.myjdownloader.MyJDownloaderSettings.json"
