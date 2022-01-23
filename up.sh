@@ -5,7 +5,8 @@ firstremote=$(rclone listremotes --config=/rclone.conf |head -1 |sed 's/://g')
 while getopts ":a:" opt; do
   case $opt in
     a)
-      file=$(ls /home |grep $OPTARG)
+      file1=$(ls /home |grep $OPTARG)
+      file2=$(ls /jdx |grep $OPTARG)
       rclone copy /home/"$file" "$firstremote":jd2rc --config=/rclone.conf;
       ;;
     \?)
