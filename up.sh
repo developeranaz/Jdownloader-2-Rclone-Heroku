@@ -5,7 +5,7 @@ firstremote=$(rclone listremotes --config=/rclone.conf |head -1 |sed 's/://g')
 while getopts ":a:" opt; do
   case $opt in
     a)
-      rclone copy "$OPTARG" "$firstremote":jd2rc --config=/rclone.conf;
+      rclone copy /home/"$OPTARG" "$firstremote":jd2rc --config=/rclone.conf;
       ;;
     \?)
       echo "Invalid option: -$OPTARG" >&2
