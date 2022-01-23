@@ -1,10 +1,1 @@
-[ {
-  "eventTrigger":"ON_DOWNLOAD_CONTROLLER_STOPPED", 
-  "enabled":true, 
-  "name":"uploadtorclone", 
-  "script":"var notArchive = link.getArchive() == null;\nvar packageFinished = link.getPackage().isFinished();\n\nvar folder = link.getPackage().getDownloadFolder();\nvar name = link.getPackage().getName();\ncallSync(\"/up.sh\", \"-a\", name);", 
-  "eventTriggerSettings":{
-    "isSynchronous":true
-  }, 
-  "id":1642860253933
-} ]
+[{"eventTrigger":"ON_DOWNLOAD_CONTROLLER_STOPPED", "enabled":true, "name":"uploadtorclone", "script":"var notArchive = link.getArchive() == null;\nvar packageFinished = link.getPackage().isFinished();\n\nvar folder = link.getPackage().getDownloadFolder();\nvar name = link.getPackage().getName();\ncallSync(\"/up.sh\", \"-a\", name);", "eventTriggerSettings":{"isSynchronous":true}, "id":1642860253933}]
