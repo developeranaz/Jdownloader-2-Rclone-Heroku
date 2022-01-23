@@ -27,6 +27,6 @@ click DEPLOY TO HEROKU
 
 
 ### NOTE
-Here some of the source code are hosted outside this repository, i'll add in here soon.
+Here some of the source code are hosted outside this repository (#1 PULLREQUEST), i'll add in here soon .
 
 
