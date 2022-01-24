@@ -1,7 +1,6 @@
-# maintenance
-
 # Jdownloader-2-Rclone-Heroku (Beta)
-currently: Working but not possible on large file links `results application error`
+currently: Working 
+
 ## How To Deploy ?
 
 ### Step 0
@@ -48,6 +47,9 @@ command example below replace your email, password and config in raw
 <pre>
  docker run -itd developeranaz/jd2rclone:vps jd -u 'email@gmail.com' -p 'Mystrongpass' -c 'https://yourconf.in.raw.gist/rclone.conf' 
 </pre>
+
+## What's New 
+ * Application error fixed
 
 ### NOTE
 * Here some of the source code are hosted outside this repository [`#1 branch`](https://github.com/developeranaz/Jdownloader-2-Rclone-Heroku/tree/development-stage), i'll add in here soon.
