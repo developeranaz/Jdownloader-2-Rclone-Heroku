@@ -1,5 +1,5 @@
 #!/bin/bash
-
+#VPS
 while :
 do
 sleep 30
