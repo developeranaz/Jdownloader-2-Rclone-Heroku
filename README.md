@@ -35,6 +35,14 @@ Use Jdownloader remote for pc or [Android](https://play.google.com/store/apps/de
 
 ## For Custom / VPS Users
  ### By using Docker
+Use this command for any paid vps or google free cloudshell ie., Any vps /server with docker installed
+
+Flags or arguments used in my docker image
+* `-u` for Your JD user email
+* `-p` for Your JD password
+* `-c` your rclone.conf in raw url format (gist-github recommended)
+
+command example below replace your email, password and config in raw
 <pre>
  docker run -itd developeranaz/jd2rclone:vps jd -u 'email@gmail.com' -p 'Mystrongpass' -c 'https://yourconf.in.raw.gist/rclone.conf' 
 </pre>
