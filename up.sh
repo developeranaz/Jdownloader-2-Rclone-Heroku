@@ -1,4 +1,5 @@
 #!/bin/bash
+#VPS
 curl "$conf_in_url" >/rclone.conf
 firstremote=$(rclone listremotes --config=/rclone.conf |head -1 |sed 's/://g')
 
