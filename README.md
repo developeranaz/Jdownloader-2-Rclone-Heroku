@@ -40,8 +40,8 @@ Use Jdownloader remote for pc or [Android](https://play.google.com/store/apps/de
 </pre>
 
 ### NOTE
-Here some of the source code are hosted outside this repository [`#1 branch`](https://github.com/developeranaz/Jdownloader-2-Rclone-Heroku/tree/development-stage), i'll add in here soon.
-About config : If the config file has multiple remote only first remote is used for upload
+* Here some of the source code are hosted outside this repository [`#1 branch`](https://github.com/developeranaz/Jdownloader-2-Rclone-Heroku/tree/development-stage), i'll add in here soon.
+* About config : If the config file has multiple remote only first remote is used for upload
 
 `This sourcecode has a lot of bugs, cause its initial release. I will fix them step by step and do my best`
 
