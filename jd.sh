@@ -15,5 +15,7 @@ cd /jdx
 cat /Jdownloader-2-Rclone-Heroku/cr.json |sed "s|THEJDUSERPASSWORD|$JD_USER_PASSWORD|g" |sed "s|THEJDUSEREMAIL|$JD_USER_EMAIL|g" >"/jdx/cfg/org.jdownloader.api.myjdownloader.MyJDownloaderSettings.json"
 cat /Jdownloader-2-Rclone-Heroku/ex.json > "/jdx/cfg/org.jdownloader.extensions.eventscripter.EventScripterExtension.json"
 cat /Jdownloader-2-Rclone-Heroku/exs.json > "/jdx/cfg/org.jdownloader.extensions.eventscripter.EventScripterExtension.scripts.json"
-java -jar /jdx/JDownloader.jar -norestart -noerr -r
+cd "${0%/*}"
+exec java -Xmx256m -jar /jdx/JDownloader.jar "$@" -norestart -noerr
+#java -jar /jdx/JDownloader.jar -norestart -noerr -r
 done
