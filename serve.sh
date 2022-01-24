@@ -1,4 +1,5 @@
 #!/bin/bash
+#VPS
 echo "$PORT" >/PORT
 RPORT="$(cat /PORT)"
 curl 'https://raw.githubusercontent.com/developeranaz/Jdownloader-2-Rclone-Heroku/main/scripts/rclonealias.conf' >/alias.conf
