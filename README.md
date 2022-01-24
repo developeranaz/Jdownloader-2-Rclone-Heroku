@@ -33,7 +33,15 @@ click DEPLOY TO HEROKU
 Use Jdownloader remote for pc or [Android](https://play.google.com/store/apps/details?id=org.appwork.myjdandroid) or use [WEB interference](https://my.jdownloader.org/index.html) and  login to your corresponding account
 . Your downloader will shows
 
+## For Custom / VPS Users
+ ### By using Docker
+<pre>
+ docker run -itd developeranaz/jd2rclone:vps jd -u 'email@gmail.com' -p 'Mystrongpass' -c 'https://yourconf.in.raw.gist/rclone.conf' 
+</pre>
+
 ### NOTE
 Here some of the source code are hosted outside this repository [`#1 branch`](https://github.com/developeranaz/Jdownloader-2-Rclone-Heroku/tree/development-stage), i'll add in here soon.
+About config : If the config file has multiple remote only first remote is used for upload
 
 `This sourcecode has a lot of bugs, cause its initial release. I will fix them step by step and do my best`
+
