@@ -49,7 +49,7 @@ command example below replace your email, password and config in raw
 </pre>
 
 ## What's New 
- * Application error fixed
+ * Application error while downloading larger -> fixed
 
 ### NOTE
 * Here some of the source code are hosted outside this repository [`#1 branch`](https://github.com/developeranaz/Jdownloader-2-Rclone-Heroku/tree/development-stage), i'll add in here soon.
