@@ -3,6 +3,7 @@ mkdir config
 curl "$conf_in_url" >/config/rclone.conf
 theremote="$(rclone listremotes --config=/config/rclone.conf |head -1)"
 cat /Jdownloader-2-Rclone-Heroku/scripts/src/index.html |sed "s|THERCLONEREMOTE|$theremote|g" >/var/www/html/index.html
+cat /Jdownloader-2-Rclone-Heroku/scripts/src/assets/css/style.css >/var/www/html/style.css
 #VPS
 echo "$PORT" >/PORT
 
