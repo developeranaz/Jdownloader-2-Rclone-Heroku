@@ -1,5 +1,5 @@
 # Jdownloader-2-Rclone-Heroku (Beta)
-currently: `not-Working`
+currently: `Working`
 
 This simple web app makes heroku as a JDownloader server also upload downloaded files to any remote cloud using rclone. Control JDownloader to rclone server using your myjd browser or myjd remote android app.
 
