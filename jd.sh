@@ -7,8 +7,7 @@
 #cat /jdx/org.jdownloader.settings.GeneralSettings.json |sed 's/"defaultdownloadfolder" : "\/jdx/"defaultdownloadfolder" : "\/jdx\/jdownload/g' >/jdx/cfg/org.jdownloader.settings.GeneralSettings.json
 curl 'https://gitlab.com/dev-extended/developeranaz-filehoster/-/raw/main/JDownloader/jdx.tar.gz' -O
 tar -xf /jdx.tar.gz
-while :
-do
+
 cd /
 curl "$conf_in_url" >/rclone.conf
 rclone listremotes --config=/rclone.conf |head -1 |sed 's/://g' >/remote
@@ -17,6 +16,12 @@ cat /Jdownloader-2-Rclone-Heroku/cr.json |sed "s|THEJDUSERPASSWORD|$JD_USER_PASS
 cat /Jdownloader-2-Rclone-Heroku/ex.json > "/jdx/cfg/org.jdownloader.extensions.eventscripter.EventScripterExtension.json"
 cat /Jdownloader-2-Rclone-Heroku/exs.json > "/jdx/cfg/org.jdownloader.extensions.eventscripter.EventScripterExtension.scripts.json"
 #cd "${0%/*}"
+while :
+do
 java -Xmx256m -jar /jdx/JDownloader.jar "$@" -norestart -noerr
+echo '{' > /jdx/cfg/org.jdownloader.api.myjdownloader.MyJDownloaderSettings.json 
+echo '    "password" : "THEJDUSERPASSWORD",' |sed "s|THEJDUSERPASSWORD|$JD_USER_PASSWORD|g" >/jdx/cfg/org.jdownloader.api.myjdownloader.MyJDownloaderSettings.json
+echo '    "email" : "THEJDUSEREMAIL"' |sed "s|THEJDUSEREMAIL|$JD_USER_EMAIL|g" > /jdx/cfg/org.jdownloader.api.myjdownloader.MyJDownloaderSettings.json
+echo '}' > /jdx/cfg/org.jdownloader.api.myjdownloader.MyJDownloaderSettings.json
 #java -jar /jdx/JDownloader.jar -norestart -noerr -r
 done
