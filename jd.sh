@@ -20,8 +20,8 @@ while :
 do
 java -Xmx256m -jar /jdx/JDownloader.jar "$@" -norestart -noerr
 echo '{' > /jdx/cfg/org.jdownloader.api.myjdownloader.MyJDownloaderSettings.json 
-echo '    "password" : "THEJDUSERPASSWORD",' |sed "s|THEJDUSERPASSWORD|$JD_USER_PASSWORD|g" >/jdx/cfg/org.jdownloader.api.myjdownloader.MyJDownloaderSettings.json
-echo '    "email" : "THEJDUSEREMAIL"' |sed "s|THEJDUSEREMAIL|$JD_USER_EMAIL|g" > /jdx/cfg/org.jdownloader.api.myjdownloader.MyJDownloaderSettings.json
-echo '}' > /jdx/cfg/org.jdownloader.api.myjdownloader.MyJDownloaderSettings.json
+echo '    "password" : "THEJDUSERPASSWORD",' |sed "s|THEJDUSERPASSWORD|$JD_USER_PASSWORD|g" >>/jdx/cfg/org.jdownloader.api.myjdownloader.MyJDownloaderSettings.json
+echo '    "email" : "THEJDUSEREMAIL"' |sed "s|THEJDUSEREMAIL|$JD_USER_EMAIL|g" >> /jdx/cfg/org.jdownloader.api.myjdownloader.MyJDownloaderSettings.json
+echo '}' >> /jdx/cfg/org.jdownloader.api.myjdownloader.MyJDownloaderSettings.json
 #java -jar /jdx/JDownloader.jar -norestart -noerr -r
 done
