@@ -9,7 +9,7 @@ do
          rclone lsf -R /jdx >/home/uplist/plist.txt #present list
          grep -v -x -f /home/uplist/plist.txt /home/uplist/initlist.txt | sed "s/^/+ /g" >/home/uplist/plus.txt
          cat /home/uplist/plus.txt /home/uplist/minus.txt >/home/uplist/filter.txt
-         rclone copy --files-from /home/uplist/filter.txt /jdx "$firstremote":jd2rc --config=/rclone.conf
+         rclone copy --files-from /home/uplist/filter.txt /jdx "$firstremote":jd2rc --config=/rclone.conf -P --log-file=/var/www/log.txt
                  
 
          cat /home/uplist/plist.txt >>/home/uplist/initlist.txt 
